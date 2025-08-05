@@ -1,0 +1,1579 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-05",
+  "repository": {
+    "url": "https://github.com/sarkarraj/ccmanager",
+    "branch": "main",
+    "basePath": "docs/templates",
+    "rawUrlTemplate": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/{category}/{subcategory}/{filename}",
+    "note": "URLs will be accessible once repository is pushed to GitHub"
+  },
+  "description": "Registry of Claude Code agent templates, commands, and MCP server configurations",
+  "categories": {
+    "agents": {
+      "description": "AI agent templates for specialized tasks",
+      "subcategories": {
+        "ai-specialists": {
+          "description": "AI and LLM specialized agents",
+          "templates": [
+            {
+              "id": "hackathon-ai-strategist",
+              "name": "Hackathon AI Strategist",
+              "description": "Strategic planning and coordination for hackathon projects with AI focus",
+              "category": "ai-specialists",
+              "tags": ["hackathon", "strategy", "ai", "planning", "coordination"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ai-specialists/hackathon-ai-strategist.md",
+              "dependencies": [],
+              "relatedTemplates": ["project-supervisor-orchestrator", "sprint-planning"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "llms-maintainer",
+              "name": "LLMs Maintainer",
+              "description": "Maintains and optimizes Large Language Model implementations and configurations",
+              "category": "ai-specialists",
+              "tags": ["llm", "maintenance", "optimization", "ai", "models"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ai-specialists/llms-maintainer.md",
+              "dependencies": [],
+              "relatedTemplates": ["prompt-engineer", "ai-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "prompt-engineer",
+              "name": "Prompt Engineer",
+              "description": "Optimizes prompts for LLMs and AI systems. Expert in prompt patterns and techniques",
+              "category": "ai-specialists",
+              "tags": ["prompt", "engineering", "llm", "optimization", "ai"],
+              "model": "opus",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ai-specialists/prompt-engineer.md",
+              "dependencies": [],
+              "relatedTemplates": ["llms-maintainer", "ai-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "search-specialist",
+              "name": "Search Specialist",
+              "description": "Optimizes search functionality and information retrieval systems",
+              "category": "ai-specialists",
+              "tags": ["search", "optimization", "retrieval", "indexing", "ai"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ai-specialists/search-specialist.md",
+              "dependencies": [],
+              "relatedTemplates": ["data-engineer", "database-optimization"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "task-decomposition-expert",
+              "name": "Task Decomposition Expert",
+              "description": "Breaks down complex tasks into manageable subtasks and workflows",
+              "category": "ai-specialists",
+              "tags": ["task", "decomposition", "planning", "workflow", "management"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ai-specialists/task-decomposition-expert.md",
+              "dependencies": [],
+              "relatedTemplates": ["project-supervisor-orchestrator", "sprint-planning"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "api-graphql": {
+          "description": "API and GraphQL development specialists",
+          "templates": [
+            {
+              "id": "graphql-architect",
+              "name": "GraphQL Architect",
+              "description": "Designs and implements GraphQL schemas, resolvers, and API architecture",
+              "category": "api-graphql",
+              "tags": ["graphql", "api", "schema", "architecture", "backend"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/api-graphql/graphql-architect.md",
+              "dependencies": ["backend"],
+              "relatedTemplates": ["backend-architect", "api-documenter"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "business-marketing": {
+          "description": "Business and marketing specialists",
+          "templates": [
+            {
+              "id": "business-analyst",
+              "name": "Business Analyst",
+              "description": "Analyzes business requirements and processes for technical implementation",
+              "category": "business-marketing",
+              "tags": ["business", "analysis", "requirements", "strategy", "planning"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/business-analyst.md",
+              "dependencies": [],
+              "relatedTemplates": ["risk-manager", "legal-advisor"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "content-marketer",
+              "name": "Content Marketer",
+              "description": "Creates and optimizes marketing content and campaigns",
+              "category": "business-marketing",
+              "tags": ["content", "marketing", "campaigns", "seo", "copywriting"],
+              "model": "sonnet",
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/content-marketer.md",
+              "dependencies": [],
+              "relatedTemplates": ["seo-podcast-optimizer", "social-media-copywriter"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "customer-support",
+              "name": "Customer Support",
+              "description": "Handles customer inquiries and support ticket management",
+              "category": "business-marketing",
+              "tags": ["support", "customer service", "tickets", "communication"],
+              "model": "sonnet",
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/customer-support.md",
+              "dependencies": [],
+              "relatedTemplates": ["content-marketer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "legal-advisor",
+              "name": "Legal Advisor",
+              "description": "Provides legal guidance for software projects and compliance",
+              "category": "business-marketing",
+              "tags": ["legal", "compliance", "contracts", "privacy", "gdpr"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/legal-advisor.md",
+              "dependencies": [],
+              "relatedTemplates": ["business-analyst", "risk-manager"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "payment-integration",
+              "name": "Payment Integration",
+              "description": "Implements payment systems and financial transaction processing",
+              "category": "business-marketing",
+              "tags": ["payments", "fintech", "integration", "security", "stripe"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/payment-integration.md",
+              "dependencies": ["security"],
+              "relatedTemplates": ["security-auditor", "backend-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "risk-manager",
+              "name": "Risk Manager",
+              "description": "Identifies and mitigates project and business risks",
+              "category": "business-marketing",
+              "tags": ["risk", "management", "analysis", "mitigation", "strategy"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/risk-manager.md",
+              "dependencies": [],
+              "relatedTemplates": ["business-analyst", "legal-advisor"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "sales-automator",
+              "name": "Sales Automator",
+              "description": "Automates sales processes and CRM integrations",
+              "category": "business-marketing",
+              "tags": ["sales", "automation", "crm", "leads", "conversion"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/business-marketing/sales-automator.md",
+              "dependencies": [],
+              "relatedTemplates": ["content-marketer", "customer-support"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "data-ai": {
+          "description": "Data science and AI engineering specialists",
+          "templates": [
+            {
+              "id": "ai-engineer",
+              "name": "AI Engineer",
+              "description": "Develops and deploys AI/ML systems and integrations",
+              "category": "data-ai",
+              "tags": ["ai", "machine learning", "deployment", "integration", "models"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/ai-engineer.md",
+              "dependencies": ["python", "data"],
+              "relatedTemplates": ["ml-engineer", "data-scientist"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "data-engineer",
+              "name": "Data Engineer",
+              "description": "Builds data pipelines and infrastructure for analytics",
+              "category": "data-ai",
+              "tags": ["data", "pipelines", "etl", "infrastructure", "analytics"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/data-engineer.md",
+              "dependencies": ["database", "python"],
+              "relatedTemplates": ["database-admin", "cloud-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "data-scientist",
+              "name": "Data Scientist",
+              "description": "Analyzes data and builds predictive models",
+              "category": "data-ai",
+              "tags": ["data science", "analytics", "modeling", "statistics", "python"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/data-scientist.md",
+              "dependencies": ["python", "data"],
+              "relatedTemplates": ["ai-engineer", "quant-analyst"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "ml-engineer",
+              "name": "ML Engineer",
+              "description": "Implements and maintains machine learning systems in production",
+              "category": "data-ai",
+              "tags": ["machine learning", "mlops", "production", "deployment", "monitoring"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/ml-engineer.md",
+              "dependencies": ["python", "devops"],
+              "relatedTemplates": ["mlops-engineer", "ai-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mlops-engineer",
+              "name": "MLOps Engineer",
+              "description": "Manages ML model lifecycle and deployment pipelines",
+              "category": "data-ai",
+              "tags": ["mlops", "deployment", "monitoring", "automation", "ci/cd"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/mlops-engineer.md",
+              "dependencies": ["devops", "python"],
+              "relatedTemplates": ["ml-engineer", "deployment-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "quant-analyst",
+              "name": "Quant Analyst",
+              "description": "Develops quantitative models for financial and trading systems",
+              "category": "data-ai",
+              "tags": ["quantitative", "finance", "trading", "modeling", "risk"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/data-ai/quant-analyst.md",
+              "dependencies": ["python", "finance"],
+              "relatedTemplates": ["data-scientist", "risk-manager"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "database": {
+          "description": "Database administration and optimization specialists",
+          "templates": [
+            {
+              "id": "database-admin",
+              "name": "Database Admin",
+              "description": "Manages database systems, security, and maintenance",
+              "category": "database",
+              "tags": ["database", "administration", "security", "maintenance", "sql"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/database/database-admin.md",
+              "dependencies": ["sql"],
+              "relatedTemplates": ["database-optimizer", "security-auditor"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "database-optimization",
+              "name": "Database Optimization",
+              "description": "Optimizes database performance and query efficiency",
+              "category": "database",
+              "tags": ["database", "optimization", "performance", "indexing", "queries"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/database/database-optimization.md",
+              "dependencies": ["sql"],
+              "relatedTemplates": ["database-admin", "performance-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "database-optimizer",
+              "name": "Database Optimizer",
+              "description": "Analyzes and improves database schema and query performance",
+              "category": "database",
+              "tags": ["database", "optimization", "schema", "performance", "analysis"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/database/database-optimizer.md",
+              "dependencies": ["sql"],
+              "relatedTemplates": ["database-admin", "database-optimization"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "deep-research-team": {
+          "description": "Specialized research and analysis agents",
+          "templates": [
+            {
+              "id": "academic-researcher",
+              "name": "Academic Researcher",
+              "description": "Conducts thorough academic research and literature reviews",
+              "category": "deep-research-team",
+              "tags": ["research", "academic", "literature", "analysis", "papers"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/academic-researcher.md",
+              "dependencies": [],
+              "relatedTemplates": ["research-coordinator", "technical-researcher"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "data-analyst",
+              "name": "Data Analyst",
+              "description": "Analyzes data and generates insights for research projects",
+              "category": "deep-research-team",
+              "tags": ["data", "analysis", "insights", "visualization", "statistics"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/data-analyst.md",
+              "dependencies": ["data"],
+              "relatedTemplates": ["data-scientist", "report-generator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "query-clarifier",
+              "name": "Query Clarifier",
+              "description": "Clarifies and refines research questions and requirements",
+              "category": "deep-research-team",
+              "tags": ["query", "clarification", "requirements", "research", "planning"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/query-clarifier.md",
+              "dependencies": [],
+              "relatedTemplates": ["research-coordinator", "task-decomposition-expert"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "report-generator",
+              "name": "Report Generator",
+              "description": "Generates comprehensive research reports and documentation",
+              "category": "deep-research-team",
+              "tags": ["reports", "documentation", "writing", "analysis", "synthesis"],
+              "model": "opus",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/report-generator.md",
+              "dependencies": [],
+              "relatedTemplates": ["research-synthesizer", "api-documenter"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "research-brief-generator",
+              "name": "Research Brief Generator",
+              "description": "Creates concise research briefs and summaries",
+              "category": "deep-research-team",
+              "tags": ["research", "briefs", "summaries", "synthesis", "communication"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/research-brief-generator.md",
+              "dependencies": [],
+              "relatedTemplates": ["report-generator", "research-synthesizer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "research-coordinator",
+              "name": "Research Coordinator",
+              "description": "Coordinates research activities and manages research workflows",
+              "category": "deep-research-team",
+              "tags": ["research", "coordination", "workflow", "management", "planning"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/research-coordinator.md",
+              "dependencies": [],
+              "relatedTemplates": ["research-orchestrator", "project-supervisor-orchestrator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "research-orchestrator",
+              "name": "Research Orchestrator",
+              "description": "Orchestrates complex research projects with multiple phases",
+              "category": "deep-research-team",
+              "tags": ["research", "orchestration", "coordination", "complex", "multi-phase"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/research-orchestrator.md",
+              "dependencies": [],
+              "relatedTemplates": ["research-coordinator", "project-supervisor-orchestrator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "research-synthesizer",
+              "name": "Research Synthesizer",
+              "description": "Synthesizes research findings from multiple sources",
+              "category": "deep-research-team",
+              "tags": ["research", "synthesis", "analysis", "integration", "insights"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/research-synthesizer.md",
+              "dependencies": [],
+              "relatedTemplates": ["academic-researcher", "report-generator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "technical-researcher",
+              "name": "Technical Researcher",
+              "description": "Researches technical topics and emerging technologies",
+              "category": "deep-research-team",
+              "tags": ["technical", "research", "technology", "analysis", "trends"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/deep-research-team/technical-researcher.md",
+              "dependencies": ["technical"],
+              "relatedTemplates": ["academic-researcher", "ai-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "development-team": {
+          "description": "Core development team specialists",
+          "templates": [
+            {
+              "id": "backend-architect",
+              "name": "Backend Architect",
+              "description": "Design RESTful APIs, microservice boundaries, and database schemas. Reviews system architecture for scalability and performance bottlenecks",
+              "category": "development-team",
+              "tags": ["backend", "architecture", "api", "microservices", "scalability"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-team/backend-architect.md",
+              "dependencies": ["backend"],
+              "relatedTemplates": ["database-admin", "cloud-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "frontend-developer",
+              "name": "Frontend Developer",
+              "description": "Develops user interfaces and frontend applications",
+              "category": "development-team",
+              "tags": ["frontend", "ui", "ux", "react", "javascript"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-team/frontend-developer.md",
+              "dependencies": ["javascript"],
+              "relatedTemplates": ["ui-ux-designer", "react-performance-optimization"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "ios-developer",
+              "name": "iOS Developer",
+              "description": "Develops iOS applications using Swift and iOS frameworks",
+              "category": "development-team",
+              "tags": ["ios", "swift", "mobile", "apple", "development"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-team/ios-developer.md",
+              "dependencies": ["swift", "ios"],
+              "relatedTemplates": ["mobile-developer", "ui-ux-designer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mobile-developer",
+              "name": "Mobile Developer",
+              "description": "Develops cross-platform mobile applications",
+              "category": "development-team",
+              "tags": ["mobile", "cross-platform", "react-native", "flutter", "development"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-team/mobile-developer.md",
+              "dependencies": ["mobile"],
+              "relatedTemplates": ["ios-developer", "frontend-developer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "ui-ux-designer",
+              "name": "UI/UX Designer",
+              "description": "Designs user interfaces and user experiences",
+              "category": "development-team",
+              "tags": ["ui", "ux", "design", "user experience", "prototyping"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-team/ui-ux-designer.md",
+              "dependencies": ["design"],
+              "relatedTemplates": ["frontend-developer", "mobile-developer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "development-tools": {
+          "description": "Development tools and productivity specialists",
+          "templates": [
+            {
+              "id": "code-reviewer",
+              "name": "Code Reviewer",
+              "description": "Reviews code for quality, security, and best practices",
+              "category": "development-tools",
+              "tags": ["code review", "quality", "security", "best practices", "analysis"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/code-reviewer.md",
+              "dependencies": [],
+              "relatedTemplates": ["security-auditor", "debugger"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "command-expert",
+              "name": "Command Expert",
+              "description": "Expert in command-line tools and automation",
+              "category": "development-tools",
+              "tags": ["command line", "cli", "automation", "tools", "productivity"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/command-expert.md",
+              "dependencies": [],
+              "relatedTemplates": ["debugger", "dx-optimizer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "context-manager",
+              "name": "Context Manager",
+              "description": "Manages project context and knowledge for development teams",
+              "category": "development-tools",
+              "tags": ["context", "knowledge", "management", "documentation", "organization"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/context-manager.md",
+              "dependencies": [],
+              "relatedTemplates": ["api-documenter", "mcp-expert"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "debugger",
+              "name": "Debugger",
+              "description": "Identifies and fixes bugs in software applications",
+              "category": "development-tools",
+              "tags": ["debugging", "troubleshooting", "bug fixing", "analysis", "testing"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/debugger.md",
+              "dependencies": [],
+              "relatedTemplates": ["code-reviewer", "error-detective"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "dx-optimizer",
+              "name": "DX Optimizer",
+              "description": "Optimizes developer experience and productivity",
+              "category": "development-tools",
+              "tags": ["developer experience", "productivity", "optimization", "workflow", "tools"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/dx-optimizer.md",
+              "dependencies": [],
+              "relatedTemplates": ["command-expert", "context-manager"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "error-detective",
+              "name": "Error Detective",
+              "description": "Investigates and resolves complex error scenarios",
+              "category": "development-tools",
+              "tags": ["error handling", "investigation", "debugging", "troubleshooting", "analysis"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/error-detective.md",
+              "dependencies": [],
+              "relatedTemplates": ["debugger", "incident-responder"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-expert",
+              "name": "MCP Expert",
+              "description": "Expert in Model Context Protocol (MCP) integration and development",
+              "category": "development-tools",
+              "tags": ["mcp", "model context protocol", "integration", "ai", "tools"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/development-tools/mcp-expert.md",
+              "dependencies": ["mcp"],
+              "relatedTemplates": ["mcp-server-architect", "ai-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "devops-infrastructure": {
+          "description": "DevOps and infrastructure specialists",
+          "templates": [
+            {
+              "id": "cloud-architect",
+              "name": "Cloud Architect",
+              "description": "Designs cloud infrastructure and architecture solutions",
+              "category": "devops-infrastructure",
+              "tags": ["cloud", "architecture", "aws", "azure", "gcp", "infrastructure"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/devops-infrastructure/cloud-architect.md",
+              "dependencies": ["cloud", "devops"],
+              "relatedTemplates": ["terraform-specialist", "deployment-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "deployment-engineer",
+              "name": "Deployment Engineer",
+              "description": "Manages application deployment and release processes",
+              "category": "devops-infrastructure",
+              "tags": ["deployment", "release", "ci/cd", "automation", "pipeline"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/devops-infrastructure/deployment-engineer.md",
+              "dependencies": ["devops"],
+              "relatedTemplates": ["cloud-architect", "devops-troubleshooter"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "devops-troubleshooter",
+              "name": "DevOps Troubleshooter",
+              "description": "Troubleshoots DevOps and infrastructure issues",
+              "category": "devops-infrastructure",
+              "tags": ["devops", "troubleshooting", "infrastructure", "monitoring", "debugging"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/devops-infrastructure/devops-troubleshooter.md",
+              "dependencies": ["devops"],
+              "relatedTemplates": ["deployment-engineer", "incident-responder"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "network-engineer",
+              "name": "Network Engineer",
+              "description": "Designs and manages network infrastructure and security",
+              "category": "devops-infrastructure",
+              "tags": ["networking", "infrastructure", "security", "protocols", "configuration"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/devops-infrastructure/network-engineer.md",
+              "dependencies": ["networking"],
+              "relatedTemplates": ["cloud-architect", "security-auditor"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "terraform-specialist",
+              "name": "Terraform Specialist",
+              "description": "Manages infrastructure as code using Terraform",
+              "category": "devops-infrastructure",
+              "tags": ["terraform", "infrastructure as code", "iac", "automation", "cloud"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/devops-infrastructure/terraform-specialist.md",
+              "dependencies": ["terraform", "cloud"],
+              "relatedTemplates": ["cloud-architect", "deployment-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "documentation": {
+          "description": "Documentation and technical writing specialists",
+          "templates": [
+            {
+              "id": "api-documenter",
+              "name": "API Documenter",
+              "description": "Creates comprehensive API documentation and guides",
+              "category": "documentation",
+              "tags": ["api", "documentation", "guides", "technical writing", "swagger"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/documentation/api-documenter.md",
+              "dependencies": [],
+              "relatedTemplates": ["docusaurus-expert", "graphql-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "docusaurus-expert",
+              "name": "Docusaurus Expert",
+              "description": "Creates and maintains documentation sites using Docusaurus",
+              "category": "documentation",
+              "tags": ["docusaurus", "documentation", "static site", "markdown", "react"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/documentation/docusaurus-expert.md",
+              "dependencies": ["react", "documentation"],
+              "relatedTemplates": ["api-documenter", "frontend-developer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "expert-advisors": {
+          "description": "Expert advisory and review specialists",
+          "templates": [
+            {
+              "id": "agent-expert",
+              "name": "Agent Expert",
+              "description": "Expert in AI agent development and orchestration",
+              "category": "expert-advisors",
+              "tags": ["agent", "ai", "orchestration", "expert", "advisory"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/expert-advisors/agent-expert.md",
+              "dependencies": ["ai"],
+              "relatedTemplates": ["ai-engineer", "prompt-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "architect-review",
+              "name": "Architect Review",
+              "description": "Reviews and provides feedback on system architecture",
+              "category": "expert-advisors",
+              "tags": ["architecture", "review", "feedback", "advisory", "systems"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/expert-advisors/architect-review.md",
+              "dependencies": ["architecture"],
+              "relatedTemplates": ["backend-architect", "cloud-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "ffmpeg-clip-team": {
+          "description": "FFmpeg and media processing specialists",
+          "templates": [
+            {
+              "id": "audio-quality-controller",
+              "name": "Audio Quality Controller",
+              "description": "Controls and optimizes audio quality in media processing",
+              "category": "ffmpeg-clip-team",
+              "tags": ["audio", "quality", "ffmpeg", "media", "processing"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/audio-quality-controller.md",
+              "dependencies": ["ffmpeg"],
+              "relatedTemplates": ["podcast-transcriber", "social-media-clip-creator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "podcast-content-analyzer",
+              "name": "Podcast Content Analyzer",
+              "description": "Analyzes podcast content for key moments and segments",
+              "category": "ffmpeg-clip-team",
+              "tags": ["podcast", "content", "analysis", "segments", "ai"],
+              "model": "opus",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/podcast-content-analyzer.md",
+              "dependencies": ["ai", "audio"],
+              "relatedTemplates": ["podcast-transcriber", "timestamp-precision-specialist"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "podcast-metadata-specialist",
+              "name": "Podcast Metadata Specialist",
+              "description": "Manages and optimizes podcast metadata and tags",
+              "category": "ffmpeg-clip-team",
+              "tags": ["podcast", "metadata", "tags", "optimization", "seo"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/podcast-metadata-specialist.md",
+              "dependencies": [],
+              "relatedTemplates": ["seo-podcast-optimizer", "podcast-content-analyzer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "podcast-transcriber",
+              "name": "Podcast Transcriber",
+              "description": "Transcribes and processes podcast audio content",
+              "category": "ffmpeg-clip-team",
+              "tags": ["podcast", "transcription", "audio", "speech-to-text", "processing"],
+              "model": "opus",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/podcast-transcriber.md",
+              "dependencies": ["audio", "ai"],
+              "relatedTemplates": ["podcast-content-analyzer", "audio-quality-controller"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "social-media-clip-creator",
+              "name": "Social Media Clip Creator",
+              "description": "Creates optimized clips for social media platforms",
+              "category": "ffmpeg-clip-team",
+              "tags": ["social media", "clips", "video", "optimization", "ffmpeg"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/social-media-clip-creator.md",
+              "dependencies": ["ffmpeg", "video"],
+              "relatedTemplates": ["audio-quality-controller", "timestamp-precision-specialist"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "timestamp-precision-specialist",
+              "name": "Timestamp Precision Specialist",
+              "description": "Ensures precise timing and synchronization in media clips",
+              "category": "ffmpeg-clip-team",
+              "tags": ["timestamp", "precision", "synchronization", "media", "timing"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/ffmpeg-clip-team/timestamp-precision-specialist.md",
+              "dependencies": ["ffmpeg"],
+              "relatedTemplates": ["podcast-content-analyzer", "social-media-clip-creator"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "mcp-dev-team": {
+          "description": "MCP development and integration specialists",
+          "templates": [
+            {
+              "id": "mcp-deployment-orchestrator",
+              "name": "MCP Deployment Orchestrator",
+              "description": "Orchestrates deployment of MCP servers and configurations",
+              "category": "mcp-dev-team",
+              "tags": ["mcp", "deployment", "orchestration", "configuration", "automation"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/mcp-dev-team/mcp-deployment-orchestrator.md",
+              "dependencies": ["mcp", "deployment"],
+              "relatedTemplates": ["mcp-server-architect", "deployment-engineer"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-registry-navigator",
+              "name": "MCP Registry Navigator",
+              "description": "Navigates and manages MCP server registries and catalogs",
+              "category": "mcp-dev-team",
+              "tags": ["mcp", "registry", "catalog", "navigation", "management"],
+              "model": "sonnet",
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/mcp-dev-team/mcp-registry-navigator.md",
+              "dependencies": ["mcp"],
+              "relatedTemplates": ["mcp-expert", "context-manager"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-security-auditor",
+              "name": "MCP Security Auditor",
+              "description": "Audits MCP implementations for security vulnerabilities",
+              "category": "mcp-dev-team",
+              "tags": ["mcp", "security", "audit", "vulnerabilities", "compliance"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/mcp-dev-team/mcp-security-auditor.md",
+              "dependencies": ["mcp", "security"],
+              "relatedTemplates": ["security-auditor", "mcp-server-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-server-architect",
+              "name": "MCP Server Architect",
+              "description": "Designs and implements MCP server architectures",
+              "category": "mcp-dev-team",
+              "tags": ["mcp", "server", "architecture", "design", "implementation"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/mcp-dev-team/mcp-server-architect.md",
+              "dependencies": ["mcp", "architecture"],
+              "relatedTemplates": ["mcp-expert", "backend-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-testing-engineer",
+              "name": "MCP Testing Engineer",
+              "description": "Tests and validates MCP server implementations",
+              "category": "mcp-dev-team",
+              "tags": ["mcp", "testing", "validation", "quality", "automation"],
+              "model": "sonnet",
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/mcp-dev-team/mcp-testing-engineer.md",
+              "dependencies": ["mcp", "testing"],
+              "relatedTemplates": ["test-automator", "mcp-server-architect"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "modernization": {
+          "description": "Legacy system modernization specialists",
+          "templates": [
+            {
+              "id": "legacy-modernizer",
+              "name": "Legacy Modernizer",
+              "description": "Modernizes legacy systems and applications",
+              "category": "modernization",
+              "tags": ["legacy", "modernization", "migration", "refactoring", "upgrade"],
+              "model": "opus",
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/agents/modernization/legacy-modernizer.md",
+              "dependencies": [],
+              "relatedTemplates": ["backend-architect", "migration-assistant"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        }
+      }
+    },
+    "commands": {
+      "description": "Development command templates for various tasks",
+      "subcategories": {
+        "automation": {
+          "description": "Automation and workflow commands",
+          "templates": [
+            {
+              "id": "act",
+              "name": "Act Command",
+              "description": "Local GitHub Actions runner using act tool",
+              "category": "automation",
+              "tags": ["github actions", "local", "testing", "ci/cd", "act"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/automation/act.md",
+              "dependencies": ["docker", "github"],
+              "relatedTemplates": ["ci-setup", "husky"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "husky",
+              "name": "Husky Setup",
+              "description": "Git hooks automation using Husky",
+              "category": "automation",
+              "tags": ["git hooks", "husky", "automation", "pre-commit", "quality"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/automation/husky.md",
+              "dependencies": ["git", "npm"],
+              "relatedTemplates": ["setup-linting", "setup-formatting"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "deployment": {
+          "description": "Deployment and release management commands",
+          "templates": [
+            {
+              "id": "add-changelog",
+              "name": "Add Changelog",
+              "description": "Add entries to project changelog",
+              "category": "deployment",
+              "tags": ["changelog", "release", "documentation", "versioning"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/add-changelog.md",
+              "dependencies": [],
+              "relatedTemplates": ["prepare-release", "add-to-changelog"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "ci-setup",
+              "name": "CI/CD Setup",
+              "description": "Setup continuous integration pipeline",
+              "category": "deployment",
+              "tags": ["ci/cd", "automation", "pipeline", "testing", "deployment"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/ci-setup.md",
+              "dependencies": ["git", "docker"],
+              "relatedTemplates": ["containerize-application", "setup-automated-releases"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "containerize-application",
+              "name": "Containerize Application",
+              "description": "Containerize application using Docker",
+              "category": "deployment",
+              "tags": ["docker", "containerization", "deployment", "microservices"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/containerize-application.md",
+              "dependencies": ["docker"],
+              "relatedTemplates": ["ci-setup", "setup-kubernetes-deployment"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "hotfix-deploy",
+              "name": "Hotfix Deploy",
+              "description": "Emergency hotfix deployment process",
+              "category": "deployment",
+              "tags": ["hotfix", "emergency", "deployment", "production", "rollback"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/hotfix-deploy.md",
+              "dependencies": ["git", "deployment"],
+              "relatedTemplates": ["rollback-deploy", "ci-setup"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "prepare-release",
+              "name": "Prepare Release",
+              "description": "Prepare application for release",
+              "category": "deployment",
+              "tags": ["release", "versioning", "preparation", "testing"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/prepare-release.md",
+              "dependencies": ["git"],
+              "relatedTemplates": ["add-changelog", "setup-automated-releases"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "rollback-deploy",
+              "name": "Rollback Deploy",
+              "description": "Rollback deployment to previous version",
+              "category": "deployment",
+              "tags": ["rollback", "deployment", "recovery", "production"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/rollback-deploy.md",
+              "dependencies": ["deployment"],
+              "relatedTemplates": ["hotfix-deploy", "ci-setup"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "setup-automated-releases",
+              "name": "Setup Automated Releases",
+              "description": "Setup automated release workflow",
+              "category": "deployment",
+              "tags": ["automation", "releases", "ci/cd", "versioning"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/setup-automated-releases.md",
+              "dependencies": ["git", "ci/cd"],
+              "relatedTemplates": ["ci-setup", "prepare-release"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "setup-kubernetes-deployment",
+              "name": "Setup Kubernetes Deployment",
+              "description": "Setup Kubernetes deployment configuration",
+              "category": "deployment",
+              "tags": ["kubernetes", "k8s", "deployment", "orchestration"],
+              "difficulty": "expert",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/deployment/setup-kubernetes-deployment.md",
+              "dependencies": ["kubernetes", "docker"],
+              "relatedTemplates": ["containerize-application", "ci-setup"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "documentation": {
+          "description": "Documentation and API generation commands",
+          "templates": [
+            {
+              "id": "create-architecture-documentation",
+              "name": "Create Architecture Documentation",
+              "description": "Generate comprehensive architecture documentation",
+              "category": "documentation",
+              "tags": ["architecture", "documentation", "design", "diagrams"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/documentation/create-architecture-documentation.md",
+              "dependencies": [],
+              "relatedTemplates": ["doc-api", "create-onboarding-guide"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "doc-api",
+              "name": "Document API",
+              "description": "Generate API documentation from code",
+              "category": "documentation",
+              "tags": ["api", "documentation", "swagger", "openapi"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/documentation/doc-api.md",
+              "dependencies": ["api"],
+              "relatedTemplates": ["generate-api-documentation", "create-architecture-documentation"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "generate-api-documentation",
+              "name": "Generate API Documentation",
+              "description": "Automatically generate API documentation",
+              "category": "documentation",
+              "tags": ["api", "documentation", "automation", "swagger"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/documentation/generate-api-documentation.md",
+              "dependencies": ["api"],
+              "relatedTemplates": ["doc-api", "update-docs"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "update-docs",
+              "name": "Update Documentation",
+              "description": "Update and maintain project documentation",
+              "category": "documentation",
+              "tags": ["documentation", "maintenance", "updates", "content"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/documentation/update-docs.md",
+              "dependencies": [],
+              "relatedTemplates": ["create-onboarding-guide", "troubleshooting-guide"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "git-workflow": {
+          "description": "Git workflow and version control commands",
+          "templates": [
+            {
+              "id": "commit",
+              "name": "Smart Commit",
+              "description": "Intelligent commit message generation and staging",
+              "category": "git-workflow",
+              "tags": ["git", "commit", "automation", "conventional commits"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/git-workflow/commit.md",
+              "dependencies": ["git"],
+              "relatedTemplates": ["create-pr", "create-pull-request"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "create-pr",
+              "name": "Create Pull Request",
+              "description": "Create and manage pull requests",
+              "category": "git-workflow",
+              "tags": ["git", "pull request", "pr", "code review"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/git-workflow/create-pr.md",
+              "dependencies": ["git", "github"],
+              "relatedTemplates": ["pr-review", "commit"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "pr-review",
+              "name": "Pull Request Review",
+              "description": "Comprehensive pull request review process",
+              "category": "git-workflow",
+              "tags": ["code review", "pr", "quality", "collaboration"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/git-workflow/pr-review.md",
+              "dependencies": ["git"],
+              "relatedTemplates": ["create-pr", "fix-github-issue"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "performance": {
+          "description": "Performance optimization and monitoring commands",
+          "templates": [
+            {
+              "id": "optimize-build",
+              "name": "Optimize Build",
+              "description": "Optimize build performance and bundle size",
+              "category": "performance",
+              "tags": ["performance", "build", "optimization", "bundle"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/performance/optimize-build.md",
+              "dependencies": ["build"],
+              "relatedTemplates": ["optimize-bundle-size", "performance-audit"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "performance-audit",
+              "name": "Performance Audit",
+              "description": "Comprehensive performance analysis and audit",
+              "category": "performance",
+              "tags": ["performance", "audit", "analysis", "optimization"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/performance/performance-audit.md",
+              "dependencies": [],
+              "relatedTemplates": ["optimize-build", "add-performance-monitoring"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "project-management": {
+          "description": "Project management and workflow commands",
+          "templates": [
+            {
+              "id": "create-feature",
+              "name": "Create Feature",
+              "description": "Create new feature with proper structure and documentation",
+              "category": "project-management",
+              "tags": ["feature", "development", "structure", "documentation"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/project-management/create-feature.md",
+              "dependencies": [],
+              "relatedTemplates": ["create-prd", "milestone-tracker"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "init-project",
+              "name": "Initialize Project",
+              "description": "Initialize new project with best practices and structure",
+              "category": "project-management",
+              "tags": ["initialization", "project setup", "scaffolding", "best practices"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/project-management/init-project.md",
+              "dependencies": [],
+              "relatedTemplates": ["setup-development-environment", "setup-linting"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "milestone-tracker",
+              "name": "Milestone Tracker",
+              "description": "Track and manage project milestones",
+              "category": "project-management",
+              "tags": ["milestones", "tracking", "project management", "progress"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/project-management/milestone-tracker.md",
+              "dependencies": [],
+              "relatedTemplates": ["project-health-check", "create-feature"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "security": {
+          "description": "Security audit and hardening commands",
+          "templates": [
+            {
+              "id": "dependency-audit",
+              "name": "Dependency Audit",
+              "description": "Audit dependencies for security vulnerabilities",
+              "category": "security",
+              "tags": ["security", "dependencies", "audit", "vulnerabilities"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/security/dependency-audit.md",
+              "dependencies": [],
+              "relatedTemplates": ["security-audit", "security-hardening"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "security-audit",
+              "name": "Security Audit",
+              "description": "Comprehensive security audit and vulnerability assessment",
+              "category": "security",
+              "tags": ["security", "audit", "vulnerability", "assessment"],
+              "difficulty": "advanced",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/security/security-audit.md",
+              "dependencies": [],
+              "relatedTemplates": ["dependency-audit", "security-hardening"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "setup": {
+          "description": "Development environment and tool setup commands",
+          "templates": [
+            {
+              "id": "setup-development-environment",
+              "name": "Setup Development Environment",
+              "description": "Setup complete development environment and tools",
+              "category": "setup",
+              "tags": ["setup", "development", "environment", "tools"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/setup/setup-development-environment.md",
+              "dependencies": [],
+              "relatedTemplates": ["setup-linting", "setup-formatting"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "setup-linting",
+              "name": "Setup Linting",
+              "description": "Setup code linting and quality tools",
+              "category": "setup",
+              "tags": ["linting", "code quality", "eslint", "setup"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/setup/setup-linting.md",
+              "dependencies": [],
+              "relatedTemplates": ["setup-formatting", "setup-development-environment"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "testing": {
+          "description": "Testing setup and automation commands",
+          "templates": [
+            {
+              "id": "generate-tests",
+              "name": "Generate Tests",
+              "description": "Automatically generate test cases and test files",
+              "category": "testing",
+              "tags": ["testing", "automation", "test generation", "unit tests"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/testing/generate-tests.md",
+              "dependencies": ["testing"],
+              "relatedTemplates": ["test-coverage", "e2e-setup"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "test-coverage",
+              "name": "Test Coverage",
+              "description": "Analyze and improve test coverage",
+              "category": "testing",
+              "tags": ["testing", "coverage", "analysis", "quality"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/commands/testing/test-coverage.md",
+              "dependencies": ["testing"],
+              "relatedTemplates": ["generate-tests", "write-tests"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        }
+      }
+    },
+    "mcps": {
+      "description": "Model Context Protocol server configurations",
+      "subcategories": {
+        "browser_automation": {
+          "description": "Browser automation and testing MCP servers",
+          "templates": [
+            {
+              "id": "browser-use-mcp-server",
+              "name": "Browser Use MCP Server",
+              "description": "MCP server for browser automation using browser-use library",
+              "category": "browser_automation",
+              "tags": ["browser", "automation", "testing", "web scraping"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/browser_automation/browser-use-mcp-server.json",
+              "dependencies": ["nodejs"],
+              "relatedTemplates": ["playwright-mcp-server", "mcp-server-playwright"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-server-browserbase",
+              "name": "MCP Server Browserbase",
+              "description": "MCP server for Browserbase cloud browser automation",
+              "category": "browser_automation",
+              "tags": ["browserbase", "cloud", "automation", "browser"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/browser_automation/mcp-server-browserbase.json",
+              "dependencies": ["browserbase"],
+              "relatedTemplates": ["playwright-mcp-server"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "mcp-server-playwright",
+              "name": "MCP Server Playwright",
+              "description": "MCP server for Playwright browser automation",
+              "category": "browser_automation",
+              "tags": ["playwright", "browser", "automation", "testing"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/browser_automation/mcp-server-playwright.json",
+              "dependencies": ["playwright"],
+              "relatedTemplates": ["playwright-mcp-server", "browser-use-mcp-server"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "playwright-mcp-server",
+              "name": "Playwright MCP Server",
+              "description": "A Model Context Protocol server that provides browser automation capabilities using Playwright",
+              "category": "browser_automation",
+              "tags": ["playwright", "browser automation", "web scraping", "testing"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/browser_automation/playwright-mcp-server.json",
+              "dependencies": ["playwright", "nodejs"],
+              "relatedTemplates": ["mcp-server-playwright", "browser-use-mcp-server"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "playwright-mcp",
+              "name": "Playwright MCP",
+              "description": "Playwright integration for Model Context Protocol",
+              "category": "browser_automation",
+              "tags": ["playwright", "mcp", "integration", "automation"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/browser_automation/playwright-mcp.json",
+              "dependencies": ["playwright"],
+              "relatedTemplates": ["playwright-mcp-server"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "database": {
+          "description": "Database integration MCP servers",
+          "templates": [
+            {
+              "id": "mysql-integration",
+              "name": "MySQL Integration",
+              "description": "MCP server for MySQL database integration",
+              "category": "database",
+              "tags": ["mysql", "database", "sql", "integration"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/database/mysql-integration.json",
+              "dependencies": ["mysql"],
+              "relatedTemplates": ["postgresql-integration"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            },
+            {
+              "id": "postgresql-integration",
+              "name": "PostgreSQL Integration",
+              "description": "MCP server for PostgreSQL database integration",
+              "category": "database",
+              "tags": ["postgresql", "database", "sql", "integration"],
+              "difficulty": "intermediate",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/database/postgresql-integration.json",
+              "dependencies": ["postgresql"],
+              "relatedTemplates": ["mysql-integration"],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        },
+        "devtools": {
+          "description": "Development tools and utilities MCP servers",
+          "templates": [
+            {
+              "id": "leetcode",
+              "name": "LeetCode MCP Server",
+              "description": "A Model Context Protocol (MCP) server for LeetCode that enables AI assistants to access LeetCode problems, user information, and contest data",
+              "category": "devtools",
+              "tags": ["leetcode", "coding", "algorithms", "practice", "competitive programming"],
+              "difficulty": "beginner",
+              "downloadUrl": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/mcps/devtools/leetcode.json",
+              "dependencies": [],
+              "relatedTemplates": [],
+              "version": "1.0.0",
+              "lastModified": "2025-01-05"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "metadata": {
+    "totalTemplates": 102,
+    "templateTypes": {
+      "agents": 65,
+      "commands": 28,
+      "mcps": 9
+    },
+    "difficultyLevels": {
+      "beginner": 5,
+      "intermediate": 35,
+      "advanced": 32,
+      "expert": 15
+    },
+    "popularTags": [
+      "automation",
+      "testing",
+      "deployment",
+      "ai",
+      "backend",
+      "frontend",
+      "security",
+      "database",
+      "documentation",
+      "performance"
+    ]
+  },
+  "usage": {
+    "fetchTemplate": "GET {downloadUrl}",
+    "searchExample": "Filter by tags: ['ai', 'backend'] or category: 'development-team'",
+    "installExample": "Download template and save to project directory",
+    "apiExamples": {
+      "listAllAgents": "GET registry.json -> categories.agents.subcategories",
+      "findByTag": "Search through templates where tags includes 'automation'",
+      "getTemplate": "curl -o template.md {downloadUrl}",
+      "searchByDifficulty": "Filter templates where difficulty === 'beginner'"
+    }
+  },
+  "api": {
+    "endpoints": {
+      "registry": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/registry.json",
+      "template": "https://raw.githubusercontent.com/sarkarraj/ccmanager/main/docs/templates/{path}"
+    },
+    "methods": {
+      "search": {
+        "description": "Search templates by various criteria",
+        "filters": ["category", "tags", "difficulty", "dependencies", "model"],
+        "example": "templates.filter(t => t.tags.includes('ai') && t.difficulty === 'intermediate')"
+      },
+      "download": {
+        "description": "Download template content",
+        "method": "GET",
+        "response": "Raw markdown or JSON content"
+      }
+    }
+  }
+}
