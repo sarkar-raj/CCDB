@@ -1,0 +1,72 @@
+[
+  {
+    "id": "hackathon-ai-strategist",
+    "name": "Hackathon AI Strategist",
+    "description": "Strategic planning and coordination for hackathon projects with AI focus",
+    "category": "ai-specialists",
+    "tags": ["hackathon", "strategy", "ai", "planning", "coordination"],
+    "model": "sonnet",
+    "difficulty": "intermediate",
+    "downloadUrl": "https://raw.githubusercontent.com/sarkar-raj/CCDB/main/agents/ai-specialists/hackathon-ai-strategist.md",
+    "dependencies": [],
+    "relatedTemplates": ["project-supervisor-orchestrator", "sprint-planning"],
+    "version": "1.0.0",
+    "lastModified": "2025-01-05"
+  },
+  {
+    "id": "llms-maintainer",
+    "name": "LLMs Maintainer",
+    "description": "Maintains and optimizes Large Language Model implementations and configurations",
+    "category": "ai-specialists",
+    "tags": ["llm", "maintenance", "optimization", "ai", "models"],
+    "model": "opus",
+    "difficulty": "advanced",
+    "downloadUrl": "https://raw.githubusercontent.com/sarkar-raj/CCDB/main/agents/ai-specialists/llms-maintainer.md",
+    "dependencies": [],
+    "relatedTemplates": ["prompt-engineer", "ai-engineer"],
+    "version": "1.0.0",
+    "lastModified": "2025-01-05"
+  },
+  {
+    "id": "prompt-engineer",
+    "name": "Prompt Engineer",
+    "description": "Optimizes prompts for LLMs and AI systems. Expert in prompt patterns and techniques",
+    "category": "ai-specialists",
+    "tags": ["prompt", "engineering", "llm", "optimization", "ai"],
+    "model": "opus",
+    "difficulty": "intermediate",
+    "downloadUrl": "https://raw.githubusercontent.com/sarkar-raj/CCDB/main/agents/ai-specialists/prompt-engineer.md",
+    "dependencies": [],
+    "relatedTemplates": ["llms-maintainer", "ai-engineer"],
+    "version": "1.0.0",
+    "lastModified": "2025-01-05"
+  },
+  {
+    "id": "search-specialist",
+    "name": "Search Specialist",
+    "description": "Optimizes search functionality and information retrieval systems",
+    "category": "ai-specialists",
+    "tags": ["search", "optimization", "retrieval", "indexing", "ai"],
+    "model": "sonnet",
+    "difficulty": "intermediate",
+    "downloadUrl": "https://raw.githubusercontent.com/sarkar-raj/CCDB/main/agents/ai-specialists/search-specialist.md",
+    "dependencies": [],
+    "relatedTemplates": ["data-engineer", "database-optimization"],
+    "version": "1.0.0",
+    "lastModified": "2025-01-05"
+  },
+  {
+    "id": "task-decomposition-expert",
+    "name": "Task Decomposition Expert",
+    "description": "Breaks down complex tasks into manageable subtasks and workflows",
+    "category": "ai-specialists",
+    "tags": ["task", "decomposition", "planning", "workflow", "management"],
+    "model": "sonnet",
+    "difficulty": "intermediate",
+    "downloadUrl": "https://raw.githubusercontent.com/sarkar-raj/CCDB/main/agents/ai-specialists/task-decomposition-expert.md",
+    "dependencies": [],
+    "relatedTemplates": ["project-supervisor-orchestrator", "sprint-planning"],
+    "version": "1.0.0",
+    "lastModified": "2025-01-05"
+  }
+]
